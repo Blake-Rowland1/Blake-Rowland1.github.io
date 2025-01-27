@@ -10,7 +10,7 @@
     <!-- Header Section -->
     <header class="bg-gray-800 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <h1 class="text-xl font-bold">Your Name</h1>
+            <h1 class="text-xl font-bold">Blake Rowland</h1>
             <nav>
                 <ul class="flex space-x-4 text-sm">
                     <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
@@ -22,7 +22,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center">
+    <section class="h-96 flex items-center justify-center">
         <div class="text-center">
             <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
             <p class="text-gray-400 max-w-md mx-auto text-base">Showcasing my skills, projects, and achievements. Let's build something great together.</p>
@@ -49,6 +49,24 @@
             <h3 class="text-2xl font-bold text-center mb-8">Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Example Project -->
+                <div class="bg-gray-800 rounded-md overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Project Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold mb-2">Project Title</h4>
+                        <p class="text-gray-400 text-sm">Brief description of the project. Highlight its purpose and features.</p>
+                        <a href="#" class="mt-4 inline-block text-blue-400 hover:underline text-sm">View Details</a>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+                <div class="bg-gray-800 rounded-md overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Project Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold mb-2">Project Title</h4>
+                        <p class="text-gray-400 text-sm">Brief description of the project. Highlight its purpose and features.</p>
+                        <a href="#" class="mt-4 inline-block text-blue-400 hover:underline text-sm">View Details</a>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
                 <div class="bg-gray-800 rounded-md overflow-hidden">
                     <img src="https://via.placeholder.com/300" alt="Project Thumbnail" class="w-full">
                     <div class="p-4">
