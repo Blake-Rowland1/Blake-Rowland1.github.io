@@ -22,7 +22,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="h-96 flex items-center justify-center">
+    <section class="h-screen flex items-center justify-center">
         <div class="text-center">
             <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
             <p class="text-gray-400 max-w-md mx-auto text-base">Showcasing my skills, projects, and achievements. Let's build something great together.</p>
