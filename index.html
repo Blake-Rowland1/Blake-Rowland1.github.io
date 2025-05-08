@@ -16,7 +16,8 @@
             <nav>
                 <ul class="flex space-x-4 text-sm">
                     <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
-                    <li><a href="#projects" class="text-gray-300 hover:text-white">Projects</a></li>
+                    <li><a href="#projects1" class="text-gray-300 hover:text-white">Cybersecurity Projects</a></li>
+                    <li><a href="#projects2" class="text-gray-300 hover:text-white">Personal Projects</a></li>
                     <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
                 </ul>
             </nav>
@@ -25,7 +26,7 @@
     <section class="h-96 flex items-center justify-center">
         <div class="text-center">
             <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-            <p class="text-gray-400 max-w-md mx-auto text-base">Showcasing my skills, projects, and achievements. Let&apos;s build something great together.</p><a href="#projects" class="mt-6 inline-block bg-blue-500 text-white text-sm px-6 py-3 rounded-md hover:bg-blue-600">View My Work</a>
+            <p class="text-gray-400 max-w-md mx-auto text-base">Showcasing my skills, projects, and achievements.</p><a href="#projects1" class="mt-6 inline-block bg-blue-500 text-white text-sm px-6 py-3 rounded-md hover:bg-blue-600">View My Work</a>
         </div>
     </section><!-- About Section -->
     <section id="about" class="py-20 bg-gray-800">
@@ -37,7 +38,7 @@
             <div class="flex justify-center" style="text-align: center;"><img src="AboutPhoto.jpg" alt="Your Photo" width="50%" height="50%" class="rounded-full border-4 border-gray-700" style="margin: 0 auto; display: block; "></div>
         </div>
     </section><!-- Projects Section -->
-    <section id="projects" class="py-20">
+    <section id="projects1" class="py-20">
         <div class="container mx-auto">
             <h3 class="text-2xl font-bold text-center mb-8">Security+ Projects / Accomplishments</h3>
             <p style="text-align: center;">Guthrie Center, Houston TX</p>
@@ -90,18 +91,23 @@
                 </div><!-- Add more projects as needed -->
             </div>
         </div>
-    </section><!-- Projects Section -->
-    <section id="projects" class="py-20">
+    </section><!-- Personal Projects Section -->
+    <section id="projects2" class="py-20">
         <div class="container mx-auto">
             <h3 class="text-2xl font-bold text-center mb-8">Personal Projects / Accomplishments</h3>
             <p style="text-align: center;"><br></p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Example Project -->
-                <div class="bg-gray-800 rounded-md overflow-hidden">
-                    <div class="relative"><img src="barbotFront.jpg" class="w-full carousel-img block" style="margin: 0 auto 0 0; display: block; ">&nbsp;<img src="barbotBack.png" class="w-full carousel-img hidden"> <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1">❮</button> <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1">❯</button></div>
+                <div class="relative">
+                    <img src="barbotFront.jpg" class="w-full carousel-img block">
+                    <img src="barbotBack.png" class="w-full carousel-img hidden">
+                    <button onclick="prevSlide(this)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-full shadow-md">&#10094;</button>
+                    <button onclick="nextSlide(this)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-full shadow-md">&#10095;</button>
+
                     <div class="p-4">
                         <h4 class="text-lg font-semibold mb-2">Bar-Bot</h4>
-                        <p class="text-gray-400 text-sm">The Bar-Bot is a project that I made for my parents as a chirstmas gift. It that can mix a variety of cocktails based on your selection. I programmed it using Arduino, which is a coding language based off C++. It requires precise measurments of each ingredient to ensure the drink was made correctly. This project required a lot of planning, troubleshooting, and patience. While it was challenging, I learned a lot and was very proud of the finished product.</p><a href="https://drive.google.com/file/d/1tQBE4Pi8HiyqN8JGwEbNHZG123b_mQ_-/view?usp=sharing" class="mt-4 inline-block text-blue-400 hover:underline text-sm" target="_blank" rel="noopener noreferrer">Download / Details</a>
+                        <p class="text-gray-400 text-sm">The Bar-Bot is a project that I made for my parents as a chirstmas gift. It that can mix a variety of cocktails based on your selection. I programmed it using Arduino, which is a coding language based off C++. It requires precise measurments of each ingredient to ensure the drink was made correctly. This project required a lot of planning, troubleshooting, and patience. While it was challenging, I learned a lot and was very proud of the finished product.</p><a href="https://github.com/Blake-Rowland1/BarBot" class="mt-4 inline-block text-blue-400 hover:underline text-sm" target="_blank" rel="noopener noreferrer">Download / Details</a>
+                    </div>
                     </div>
                 </div><!-- Add more projects as needed -->
             </div>
@@ -116,24 +122,24 @@
     </section><!-- Footer -->
     <footer class="bg-gray-900 text-gray-500 py-4">
         <div class="container mx-auto text-center text-sm">
+            <p>&copy; Blake Rowland. All Rights Reserved.</p>
         </div>
     </footer>
+    <!-- Image Carousel Script -->
     <script>
-  function nextSlide(btn) {
-    const imgs = btn.parentElement.querySelectorAll('.carousel-img');
-    let index = [...imgs].findIndex(img => !img.classList.contains('hidden'));
-    imgs[index].classList.add('hidden');
-    imgs[(index + 1) % imgs.length].classList.remove('hidden');
-  }
-
-  function prevSlide(btn) {
-    const imgs = btn.parentElement.querySelectorAll('.carousel-img');
-    let index = [...imgs].findIndex(img => !img.classList.contains('hidden'));
-    imgs[index].classList.add('hidden');
-    imgs[(index - 1 + imgs.length) % imgs.length].classList.remove('hidden');
-  }
-</script>
-
+        function nextSlide(btn) {
+            const imgs = btn.parentElement.querySelectorAll('.carousel-img');
+            let index = [...imgs].findIndex(img => !img.classList.contains('hidden'));
+            imgs[index].classList.add('hidden');
+            imgs[(index + 1) % imgs.length].classList.remove('hidden');
+        }
+        function prevSlide(btn) {
+            const imgs = btn.parentElement.querySelectorAll('.carousel-img');
+            let index = [...imgs].findIndex(img => !img.classList.contains('hidden'));
+            imgs[index].classList.add('hidden');
+            imgs[(index - 1 + imgs.length) % imgs.length].classList.remove('hidden');
+        }
+    </script>
 </body>
 
 </html>
