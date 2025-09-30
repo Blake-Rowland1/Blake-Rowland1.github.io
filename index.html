@@ -96,11 +96,36 @@
             <h3 class="text-2xl font-bold text-center mb-8">Personal Projects / Accomplishments</h3>
             <p style="text-align: center;"><br></p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6"><!-- Example Project -->
-                <div class="bg-gray-800 rounded-md overflow-hidden"><img src="/Images/barbotFront.jpg" class="w-full carousel-img block" style="margin: 0 auto 0 0; display: block; ">&nbsp;<img src="/Images/barbotBack.PNG" class="w-full carousel-img hidden"> <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-full shadow-md">❮</button> <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-full shadow-md">❯</button>
-                    <div class="p-4">
-                        <h4 class="text-lg font-semibold mb-2">Bar-Bot</h4>
-                        <p class="text-gray-400 text-sm">The Bar-Bot is a project that I made for my parents as a chirstmas gift. It that can mix a variety of cocktails based on your selection. I programmed it using Arduino, which is a coding language based off C++. It requires precise measurments of each ingredient to ensure the drink was made correctly. This project required a lot of planning, troubleshooting, and patience. While it was challenging, I learned a lot and was very proud of the finished product.</p><a href="https://github.com/Blake-Rowland1/BarBot" class="mt-4 inline-block text-blue-400 hover:underline text-sm" target="_blank" rel="noopener noreferrer">Download / Details</a>
+                <div class="bg-gray-800 rounded-md overflow-hidden relative">
+                  <!-- Carousel Container -->
+                  <div class="relative">
+                    <div class="overflow-hidden">
+                      <div id="barbot-carousel" class="flex transition-transform duration-500">
+                        <!-- Example Images -->
+                        <img src="/Images/barbot1.png" alt="Barbot Image 1" class="w-full flex-shrink-0">
+                        <img src="/Images/barbot2.png" alt="Barbot Image 2" class="w-full flex-shrink-0">
+                        <img src="/Images/barbot3.png" alt="Barbot Image 3" class="w-full flex-shrink-0">
+                      </div>
                     </div>
+
+                    <!-- Left Button -->
+                    <button id="prev-barbot"
+                      class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 text-white p-2 rounded-full hover:bg-gray-900">
+                      &#10094;
+                    </button>
+
+                    <!-- Right Button -->
+                    <button id="next-barbot"
+                      class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 text-white p-2 rounded-full hover:bg-gray-900">
+                      &#10095;
+                    </button>
+                  </div>
+
+                  <!-- Caption -->
+                  <div class="p-4">
+                    <h4 class="text-lg font-semibold mb-2">Barbot Project</h4>
+                    <p class="text-gray-400 text-sm">An automated cocktail mixing robot that combines software, hardware, and design.</p>
+                  </div>
                 </div> <!-- Add more projects as needed -->
           <div class="bg-gray-800 rounded-md overflow-hidden"><img src="/Images/BinaryCalculator.png" alt="Project Thumbnail" class="w-full" style="margin: 0 auto 0 0; display: block; ">
                     <div class="p-4">
