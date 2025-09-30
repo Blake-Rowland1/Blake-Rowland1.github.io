@@ -97,35 +97,33 @@
             <p style="text-align: center;"><br></p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6"><!-- Example Project -->
                 <div class="bg-gray-800 rounded-md overflow-hidden relative">
-                  <!-- Carousel Container -->
-                  <div class="relative">
-                    <div class="overflow-hidden">
-                      <div id="barbot-carousel" class="flex transition-transform duration-500">
-                        <!-- Example Images -->
-                        <img src="/Images/barbotFront.jpg" alt="Barbot Image 1" class="w-full flex-shrink-0">
-                        <img src="/Images/barbotBack.PNG" alt="Barbot Image 2" class="w-full flex-shrink-0">
-                      </div>
-                    </div>
+  <!-- Carousel Images -->
+  <div class="relative">
+    <img src="/Images/barbotFront.jpg" class="w-full carousel-img block" alt="Barbot Front">
+    <img src="/Images/barbotBack.PNG" class="w-full carousel-img hidden" alt="Barbot Back">
 
-                    <!-- Left Button -->
-                    <button id="prev-barbot"
-                      class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 text-white p-2 rounded-full hover:bg-gray-900">
-                      &#10094;
-                    </button>
+    <!-- Carousel Buttons -->
+    <button onclick="prevSlide(this)"
+      class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full shadow-md hover:bg-opacity-75">
+      ❮
+    </button>
+    <button onclick="nextSlide(this)"
+      class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full shadow-md hover:bg-opacity-75">
+      ❯
+    </button>
+  </div>
 
-                    <!-- Right Button -->
-                    <button id="next-barbot"
-                      class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 text-white p-2 rounded-full hover:bg-gray-900">
-                      &#10095;
-                    </button>
-                  </div>
-
-                  <!-- Caption -->
-                  <div class="p-4">
-                    <h4 class="text-lg font-semibold mb-2">Barbot Project</h4>
-                    <p class="text-gray-400 text-sm">An automated cocktail mixing robot that combines software, hardware, and design.</p>
-                  </div>
-                </div> <!-- Add more projects as needed -->
+  <!-- Project Info -->
+  <div class="p-4">
+    <h4 class="text-lg font-semibold mb-2">Bar-Bot</h4>
+    <p class="text-gray-400 text-sm">
+      The Bar-Bot is a project that I made for my parents as a Christmas gift. It can mix a variety of cocktails based on your selection. I programmed it using Arduino (C++). It requires precise measurements of each ingredient to ensure the drink is made correctly. This project required a lot of planning, troubleshooting, and patience. I learned a lot and was very proud of the finished product.
+    </p>
+    <a href="https://github.com/Blake-Rowland1/BarBot" class="mt-4 inline-block text-blue-400 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+      Download / Details
+    </a>
+  </div>
+</div> <!-- Add more projects as needed -->
           <div class="bg-gray-800 rounded-md overflow-hidden"><img src="/Images/BinaryCalculator.png" alt="Project Thumbnail" class="w-full" style="margin: 0 auto 0 0; display: block; ">
                     <div class="p-4">
                         <h4 class="text-lg font-semibold mb-2">2-Bit Calculator from Scratch</h4>
@@ -164,4 +162,5 @@
 </body>
 
 </html>
+
 
